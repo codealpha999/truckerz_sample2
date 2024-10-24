@@ -6,17 +6,31 @@
  </body>  
 
 
-<script>
-    document.getElementById("loginForm").addEventListener("submit", function(event) {
-        event.preventDefault(); // Prevent form submission
+ <h2>Login</h2>
+    <form id="loginForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
 
-        var username = document.getElementById("username").value;
-        var password = document.getElementById("password").value;
-        var phone = document.getElementById("phone").value;
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
 
-        // Add your login logic here
-        alert("Username: " + username + "\nPassword: " + password + "\nPhone: " + phone);
-    });
-</script>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <input type="submit" value="Login">
+    </form>
+
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent form submission
+
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            var phone = document.getElementById("phone").value;
+
+            // Add your login logic here
+            alert("Username: " + username + "\nPassword: " + password + "\nPhone: " + phone);
+        });
+    </script>
 </head>
 </html>
