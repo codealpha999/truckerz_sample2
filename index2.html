@@ -1,0 +1,22 @@
+<html>
+    <head>
+
+ <body>
+    <a href="index.html">Go to home page</a>
+ </body>  
+
+
+<script>
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent form submission
+
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        var phone = document.getElementById("phone").value;
+
+        // Add your login logic here
+        alert("Username: " + username + "\nPassword: " + password + "\nPhone: " + phone);
+    });
+</script>
+</head>
+</html>
